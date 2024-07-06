@@ -1,0 +1,114 @@
+/* Apply a gradient background to the entire app container */
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: Arial, sans-serif;
+  padding: 0;
+}
+
+/* Style the header with a dark background and white text, and fix it to the top */
+.App-header {
+  background: linear-gradient(135deg, #5ce8cf 0%, #687cd5 100%);
+  padding: 20px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Add padding to the top of the app to accommodate the fixed header */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px 20px; /* Add top padding to make space for the fixed header */
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Style the weather and news widgets with margins, padding, border, shadow, and background */
+.weather-widget,
+.news-widget {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* Center-align the heading inside the news widget */
+.news-widget h2 {
+  text-align: center;
+}
+
+/* Style the form within the news widget */
+.news-widget form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Style the input field within the news widget form */
+.news-widget input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the button within the news widget form */
+.news-widget button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Change the background color of the button when hovered */
+.news-widget button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styles for the weather widget */
+.weather-widget form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weather-widget input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.weather-widget button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.weather-widget button:hover {
+  background-color: #218838;
+}

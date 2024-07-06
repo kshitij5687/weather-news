@@ -1,0 +1,67 @@
+/* src/components/WeatherWidget.css */
+
+.weather-widget {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 450px;
+    margin: 20px auto;
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 160px;
+  }
+  
+  .weather-widget h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #383636;
+    text-align: center;
+  }
+  
+  .weather-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .weather-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #c3c3c3;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .weather-form button {
+    padding: 9.5px 8px;
+    border: none;
+    background-color: #26d365;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .weather-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .weather-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .weather-info img {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .error {
+    color: red;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
